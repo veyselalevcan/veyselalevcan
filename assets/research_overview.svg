@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#546e7a"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="620" fill="#ffffff"/>
+
+  <text x="500" y="38" text-anchor="middle" font-size="26" font-weight="700" fill="#102a43">Safe, private and robust AI for critical infrastructure</text>
+  <text x="500" y="62" text-anchor="middle" font-size="14" fill="#52606d">Three research areas, one goal: detect attacks on industrial systems, respond safely, and make the AI itself hard to attack</text>
+
+  <!-- three pillars -->
+  <g>
+    <rect x="20" y="86" width="300" height="250" rx="12" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+    <text x="170" y="116" text-anchor="middle" font-size="17" font-weight="700" fill="#1b5e20">OT and ICS cybersecurity</text>
+    <!-- plant icon -->
+    <rect x="50" y="150" width="60" height="40" fill="#cfd8dc" stroke="#546e7a" stroke-width="1.5"/>
+    <rect x="118" y="132" width="14" height="58" fill="#b0bec5" stroke="#546e7a" stroke-width="1.5"/>
+    <rect x="140" y="160" width="26" height="30" fill="#b3e5fc" stroke="#0277bd" stroke-width="1.5"/>
+    <path d="M166,185 L200,185" stroke="#0277bd" stroke-width="3"/>
+    <rect x="200" y="172" width="26" height="18" fill="#b3e5fc" stroke="#0277bd" stroke-width="1.5"/>
+    <path d="M250,150 L260,192 M270,150 L260,192 M244,162 L276,162" fill="none" stroke="#546e7a" stroke-width="2"/>
+    <g font-size="12" fill="#37474f">
+      <text x="42" y="222">SCADA and PLC anomaly detection</text>
+      <text x="42" y="242">MITRE ATT&amp;CK for ICS technique mapping</text>
+      <text x="42" y="262">CVSS 4.0 risk and IEC 62443 safety gate</text>
+      <text x="42" y="282">Digital twins: chemical plant, virtual ship</text>
+      <text x="42" y="302">SWaT, HAI, WADI, BATADAL, GRFICSv3, MaCySTe</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="350" y="86" width="300" height="250" rx="12" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+    <text x="500" y="116" text-anchor="middle" font-size="17" font-weight="700" fill="#0d47a1">AI models</text>
+    <!-- network icon -->
+    <g stroke="#1565c0" stroke-width="1.5" fill="#fff">
+      <line x1="400" y1="150" x2="460" y2="140"/><line x1="400" y1="150" x2="460" y2="170"/><line x1="400" y1="190" x2="460" y2="140"/><line x1="400" y1="190" x2="460" y2="170"/><line x1="400" y1="190" x2="460" y2="200"/>
+      <line x1="460" y1="140" x2="520" y2="155"/><line x1="460" y1="170" x2="520" y2="155"/><line x1="460" y1="170" x2="520" y2="185"/><line x1="460" y1="200" x2="520" y2="185"/>
+      <line x1="520" y1="155" x2="580" y2="170"/><line x1="520" y1="185" x2="580" y2="170"/>
+      <circle cx="400" cy="150" r="7"/><circle cx="400" cy="190" r="7"/>
+      <circle cx="460" cy="140" r="7"/><circle cx="460" cy="170" r="7"/><circle cx="460" cy="200" r="7"/>
+      <circle cx="520" cy="155" r="7"/><circle cx="520" cy="185" r="7"/>
+      <circle cx="580" cy="170" r="8" fill="#1565c0"/>
+    </g>
+    <g font-size="12" fill="#37474f">
+      <text x="372" y="222">Federated learning: data stays on site</text>
+      <text x="372" y="242">WGAN-GP for rare attack classes</text>
+      <text x="372" y="262">LSTM autoencoder + XGBoost classifier</text>
+      <text x="372" y="282">PPO agent with a human-in-the-loop gate</text>
+      <text x="372" y="302">Explanations for the operator (XAI)</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="680" y="86" width="300" height="250" rx="12" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+    <text x="830" y="116" text-anchor="middle" font-size="17" font-weight="700" fill="#b71c1c">AI security</text>
+    <!-- shield icon -->
+    <path d="M830,128 L874,142 L874,176 Q874,200 830,214 Q786,200 786,176 L786,142 Z" fill="#ffcdd2" stroke="#c62828" stroke-width="2"/>
+    <path d="M812,172 L826,186 L852,156" fill="none" stroke="#c62828" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g font-size="12" fill="#37474f">
+      <text x="702" y="238" font-size="12">Adversarial attacks: FGSM, PGD, transfer</text>
+      <text x="702" y="258">Adversarial AI Engine (automated stress tests)</text>
+      <text x="702" y="278">AI-aware threat modeling</text>
+      <text x="702" y="298">EU AI Act and NIST AI RMF alignment</text>
+      <text x="702" y="318">Resilience index for security classifiers</text>
+    </g>
+  </g>
+
+  <!-- flow -->
+  <text x="500" y="372" text-anchor="middle" font-size="15" font-weight="700" fill="#102a43">GRAD-RL: how the pieces fit together</text>
+  <g font-size="12" text-anchor="middle">
+    <rect x="20" y="388" width="140" height="70" rx="8" fill="#f5f7fa" stroke="#90a4ae"/>
+    <text x="90" y="414" font-weight="700" fill="#102a43">Plant telemetry</text><text x="90" y="432" fill="#52606d">SCADA, PLC, NMEA</text><text x="90" y="447" fill="#52606d">stays on site</text>
+    <rect x="190" y="388" width="140" height="70" rx="8" fill="#e8f5e9" stroke="#2e7d32"/>
+    <text x="260" y="414" font-weight="700" fill="#1b5e20">1. Detect</text><text x="260" y="432" fill="#52606d">LSTM autoencoder,</text><text x="260" y="447" fill="#52606d">federated, WGAN-GP</text>
+    <rect x="360" y="388" width="140" height="70" rx="8" fill="#fff8e1" stroke="#f9a825"/>
+    <text x="430" y="414" font-weight="700" fill="#e65100">2. Name</text><text x="430" y="432" fill="#52606d">XGBoost maps to a</text><text x="430" y="447" fill="#52606d">MITRE technique</text>
+    <rect x="530" y="388" width="140" height="70" rx="8" fill="#f3e5f5" stroke="#7b1fa2"/>
+    <text x="600" y="414" font-weight="700" fill="#4a148c">3. Score</text><text x="600" y="432" fill="#52606d">CVSS 4.0 graph risk,</text><text x="600" y="447" fill="#52606d">IEC 62443 level</text>
+    <rect x="700" y="388" width="140" height="70" rx="8" fill="#ffebee" stroke="#c62828"/>
+    <text x="770" y="414" font-weight="700" fill="#b71c1c">4. Respond</text><text x="770" y="432" fill="#52606d">PPO agent proposes,</text><text x="770" y="447" fill="#52606d">officer approves SL4</text>
+    <rect x="870" y="388" width="110" height="70" rx="8" fill="#eceff1" stroke="#37474f"/>
+    <text x="925" y="414" font-weight="700" fill="#102a43">Stress test</text><text x="925" y="432" fill="#52606d">adversarial attacks</text><text x="925" y="447" fill="#52606d">on every stage</text>
+  </g>
+  <g stroke="#546e7a" stroke-width="2" marker-end="url(#arr)">
+    <line x1="160" y1="423" x2="188" y2="423"/><line x1="330" y1="423" x2="358" y2="423"/><line x1="500" y1="423" x2="528" y2="423"/>
+    <line x1="670" y1="423" x2="698" y2="423"/><line x1="840" y1="423" x2="868" y2="423"/>
+  </g>
+
+  <!-- tested on -->
+  <text x="500" y="494" text-anchor="middle" font-size="13" fill="#52606d">Tested on a chemical-process twin (GRFICSv3), the SWaT water plant and the MaCySTe virtual ship</text>
+
+  <!-- counts -->
+  <rect x="20" y="510" width="960" height="92" rx="10" fill="#f5f7fa" stroke="#cfd8dc"/>
+  <g text-anchor="middle">
+    <text x="130" y="556" font-size="30" font-weight="700" fill="#1565c0">3</text><text x="130" y="580" font-size="13" fill="#52606d">journal papers (IEEE Access)</text>
+    <text x="330" y="556" font-size="30" font-weight="700" fill="#1565c0">4</text><text x="330" y="580" font-size="13" fill="#52606d">accepted conference papers</text>
+    <text x="530" y="556" font-size="30" font-weight="700" fill="#1565c0">2</text><text x="530" y="580" font-size="13" fill="#52606d">public datasets on Zenodo</text>
+    <text x="730" y="556" font-size="30" font-weight="700" fill="#1565c0">4</text><text x="730" y="580" font-size="13" fill="#52606d">open research repositories</text>
+    <text x="900" y="556" font-size="30" font-weight="700" fill="#1565c0">5</text><text x="900" y="580" font-size="13" fill="#52606d">EU-funded projects</text>
+  </g>
+</svg>
