@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 530" font-family="'Segoe UI', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <title>Eight defensive Microsoft 365 Copilot agents: an orchestrator routes requests to seven specialists for OT, cloud and AI security</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070d1a"/>
+      <stop offset="1" stop-color="#0f203a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#94a3b8" fill-opacity="0.10"/>
+    </pattern>
+    <clipPath id="card"><rect width="1200" height="530" rx="22"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="530" fill="url(#bg)"/>
+    <rect width="1200" height="530" fill="url(#dots)"/>
+    <circle cx="600" cy="332" r="230" fill="url(#glow)"/>
+    <rect width="1200" height="4" fill="url(#accent)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="529" rx="22" fill="none" stroke="#94a3b8" stroke-opacity="0.18"/>
+
+  <text x="60" y="66" font-size="14" font-weight="600" letter-spacing="3" fill="#38bdf8">MICROSOFT 365 COPILOT AGENTS</text>
+  <text x="60" y="102" font-size="28" font-weight="700" fill="#f8fafc">Eight defensive agents, one orchestrator</text>
+  <text x="60" y="132" font-size="16.5" fill="#94a3b8">Built with Copilot Agent Builder. Each agent has instructions, skills and public documentation as knowledge.</text>
+
+  <!-- spokes -->
+  <g stroke-width="2" stroke-dasharray="6 6" fill="none">
+    <path d="M520,332 L330,206" stroke="#38bdf8" stroke-opacity="0.6"/>
+    <path d="M520,332 L330,290" stroke="#2dd4bf" stroke-opacity="0.6"/>
+    <path d="M520,332 L330,374" stroke="#2dd4bf" stroke-opacity="0.6"/>
+    <path d="M520,332 L330,458" stroke="#2dd4bf" stroke-opacity="0.6"/>
+    <path d="M680,332 L870,248" stroke="#a78bfa" stroke-opacity="0.6"/>
+    <path d="M680,332 L870,332" stroke="#a78bfa" stroke-opacity="0.6"/>
+    <path d="M680,332 L870,416" stroke="#fb7185" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- hub -->
+  <g transform="translate(600,332)" text-anchor="middle">
+    <circle r="96" fill="none" stroke="#38bdf8" stroke-opacity="0.18"/>
+    <circle r="80" fill="#0b1628" stroke="url(#accent)" stroke-width="2.5"/>
+    <g fill="none" stroke="#e0f2fe" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(0,-26)">
+      <circle r="5"/><circle cx="-18" cy="16" r="4"/><circle cx="18" cy="16" r="4"/><circle cy="-20" r="4"/>
+      <path d="M-3,4 L-15,13 M3,4 L15,13 M0,-5 L0,-16"/>
+    </g>
+    <text y="16" font-size="17" font-weight="700" fill="#f8fafc">Security Agent</text>
+    <text y="37" font-size="17" font-weight="700" fill="#f8fafc">Orchestrator</text>
+    <text y="58" font-size="13" fill="#94a3b8">plans and routes</text>
+  </g>
+
+  <!-- left column -->
+  <g font-size="17" font-weight="600" fill="#f8fafc">
+    <g transform="translate(60,180)">
+      <rect width="270" height="52" rx="12" fill="#0b1628" stroke="#38bdf8" stroke-opacity="0.55"/>
+      <rect x="0" y="12" width="3" height="28" rx="1.5" fill="#38bdf8"/>
+      <text x="22" y="32">OT Incident Triage</text><text x="250" y="32" text-anchor="end" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#7dd3fc">OT</text>
+    </g>
+    <g transform="translate(60,264)">
+      <rect width="270" height="52" rx="12" fill="#0b1628" stroke="#2dd4bf" stroke-opacity="0.55"/>
+      <rect x="0" y="12" width="3" height="28" rx="1.5" fill="#2dd4bf"/>
+      <text x="22" y="32">Azure &amp; Entra</text><text x="250" y="32" text-anchor="end" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#5eead4">CLOUD</text>
+    </g>
+    <g transform="translate(60,348)">
+      <rect width="270" height="52" rx="12" fill="#0b1628" stroke="#2dd4bf" stroke-opacity="0.55"/>
+      <rect x="0" y="12" width="3" height="28" rx="1.5" fill="#2dd4bf"/>
+      <text x="22" y="32">AWS IAM</text><text x="250" y="32" text-anchor="end" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#5eead4">CLOUD</text>
+    </g>
+    <g transform="translate(60,432)">
+      <rect width="270" height="52" rx="12" fill="#0b1628" stroke="#2dd4bf" stroke-opacity="0.55"/>
+      <rect x="0" y="12" width="3" height="28" rx="1.5" fill="#2dd4bf"/>
+      <text x="22" y="32">Google Cloud IAM</text><text x="250" y="32" text-anchor="end" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#5eead4">CLOUD</text>
+    </g>
+  </g>
+
+  <!-- right column -->
+  <g font-size="17" font-weight="600" fill="#f8fafc">
+    <g transform="translate(870,222)">
+      <rect width="270" height="52" rx="12" fill="#0b1628" stroke="#a78bfa" stroke-opacity="0.55"/>
+      <rect x="0" y="12" width="3" height="28" rx="1.5" fill="#a78bfa"/>
+      <text x="22" y="32">GenAI Cloud Security</text><text x="250" y="32" text-anchor="end" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#c4b5fd">AI</text>
+    </g>
+    <g transform="translate(870,306)">
+      <rect width="270" height="52" rx="12" fill="#0b1628" stroke="#a78bfa" stroke-opacity="0.55"/>
+      <rect x="0" y="12" width="3" height="28" rx="1.5" fill="#a78bfa"/>
+      <text x="22" y="32">A2A Security</text><text x="250" y="32" text-anchor="end" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#c4b5fd">AI</text>
+    </g>
+    <g transform="translate(870,390)">
+      <rect width="270" height="52" rx="12" fill="#0b1628" stroke="#fb7185" stroke-opacity="0.55"/>
+      <rect x="0" y="12" width="3" height="28" rx="1.5" fill="#fb7185"/>
+      <text x="22" y="32">Agent Governance</text><text x="250" y="32" text-anchor="end" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#fda4af">GOV</text>
+    </g>
+    <g transform="translate(870,470)" font-weight="400">
+      <text x="0" y="22" font-size="14.5" fill="#94a3b8">Defensive use only.</text>
+      <text x="0" y="44" font-size="14.5" fill="#94a3b8">Advice, reviewed by a person.</text>
+    </g>
+  </g>
+</svg>

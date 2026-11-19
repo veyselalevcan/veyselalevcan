@@ -1,59 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 340" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 340" font-family="'Segoe UI', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <title>Veysel Alevcan. AI security for industrial systems.</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1f33"/>
-      <stop offset="1" stop-color="#16456b"/>
+      <stop offset="0" stop-color="#070d1a"/>
+      <stop offset="0.55" stop-color="#0c1830"/>
+      <stop offset="1" stop-color="#10233f"/>
     </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40,0 L0,0 L0,40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="0.6" stop-color="#38bdf8" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#94a3b8" fill-opacity="0.16"/>
     </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="dotmask"><rect width="1280" height="340" fill="url(#fade)"/></mask>
+    <clipPath id="card"><rect width="1280" height="340" rx="22"/></clipPath>
   </defs>
-  <rect width="1280" height="340" fill="url(#bg)"/>
-  <rect width="1280" height="340" fill="url(#grid)"/>
 
-  <!-- left text -->
-  <text x="70" y="128" font-size="58" font-weight="700" fill="#ffffff">Veysel Alevcan</text>
-  <text x="70" y="178" font-size="28" fill="#9fd3ff">AI security for industrial systems.</text>
-  <text x="70" y="214" font-size="20" fill="#c5d7e8">Detect attacks. Respond safely. Make the AI hard to attack.</text>
-  <g font-size="15" font-weight="700" text-anchor="middle">
-    <rect x="70" y="248" width="136" height="32" rx="16" fill="#1d6fa5"/><text x="138" y="269" fill="#fff">OT / ICS security</text>
-    <rect x="216" y="248" width="150" height="32" rx="16" fill="#2e7d6b"/><text x="291" y="269" fill="#fff">Federated learning</text>
-    <rect x="376" y="248" width="130" height="32" rx="16" fill="#a23a4a"/><text x="441" y="269" fill="#fff">AI security</text>
+  <g clip-path="url(#card)">
+    <rect width="1280" height="340" fill="url(#bg)"/>
+    <rect width="1280" height="340" fill="url(#dots)" mask="url(#dotmask)"/>
+    <circle cx="1010" cy="170" r="250" fill="url(#glow)"/>
+    <rect x="0" y="336" width="1280" height="4" fill="url(#accent)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="339" rx="22" fill="none" stroke="#94a3b8" stroke-opacity="0.18"/>
+
+  <!-- text -->
+  <text x="72" y="92" font-size="15" font-weight="600" letter-spacing="3.2" fill="#38bdf8">PHD RESEARCHER · AI SECURITY · LISBON</text>
+  <text x="70" y="160" font-size="62" font-weight="700" fill="#f8fafc" letter-spacing="-1">Veysel Alevcan</text>
+  <text x="72" y="204" font-size="26" font-weight="500" fill="#cbd5e1">AI security for industrial systems</text>
+  <text x="72" y="238" font-size="18" fill="#94a3b8">Detect attacks. Respond safely. Make the AI hard to attack.</text>
+
+  <g font-size="15" font-weight="600" text-anchor="middle">
+    <rect x="72" y="266" width="160" height="36" rx="18" fill="#38bdf8" fill-opacity="0.12" stroke="#38bdf8" stroke-opacity="0.55"/>
+    <text x="152" y="289" fill="#7dd3fc">OT / ICS security</text>
+    <rect x="244" y="266" width="176" height="36" rx="18" fill="#2dd4bf" fill-opacity="0.12" stroke="#2dd4bf" stroke-opacity="0.55"/>
+    <text x="332" y="289" fill="#5eead4">Federated learning</text>
+    <rect x="432" y="266" width="128" height="36" rx="18" fill="#a78bfa" fill-opacity="0.12" stroke="#a78bfa" stroke-opacity="0.55"/>
+    <text x="496" y="289" fill="#c4b5fd">AI security</text>
+    <rect x="572" y="266" width="148" height="36" rx="18" fill="#fb7185" fill-opacity="0.12" stroke="#fb7185" stroke-opacity="0.55"/>
+    <text x="646" y="289" fill="#fda4af">Agentic AI</text>
   </g>
 
-  <!-- right art: plant, ship, shield -->
-  <g transform="translate(700,40)">
-    <!-- sea -->
-    <path d="M0,230 Q40,218 80,230 T160,230 T240,230 T320,230 T400,230 T480,230 T560,230 L560,260 L0,260 Z" fill="#1d6fa5" opacity="0.55"/>
-    <!-- plant on left -->
-    <rect x="10" y="160" width="90" height="62" fill="#cfd8dc" stroke="#90a4ae" stroke-width="2"/>
-    <rect x="22" y="174" width="16" height="16" fill="#78909c"/><rect x="48" y="174" width="16" height="16" fill="#78909c"/><rect x="74" y="174" width="16" height="16" fill="#78909c"/>
-    <rect x="112" y="120" width="22" height="102" fill="#b0bec5" stroke="#90a4ae" stroke-width="2"/>
-    <path d="M123,114 Q136,98 126,84" fill="none" stroke="#b0bec5" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-    <rect x="146" y="170" width="38" height="52" fill="#9fd3ff" stroke="#5aa9dd" stroke-width="2"/>
-    <rect x="196" y="186" width="38" height="36" fill="#9fd3ff" stroke="#5aa9dd" stroke-width="2"/>
-    <path d="M184,212 L196,212" stroke="#5aa9dd" stroke-width="4"/>
-    <!-- ship -->
-    <path d="M300,200 L470,200 L494,214 L462,236 L318,236 Z" fill="#37474f" stroke="#cfd8dc" stroke-width="2"/>
-    <rect x="300" y="196" width="170" height="5" fill="#c62828"/>
-    <rect x="312" y="160" width="46" height="40" fill="#eceff1" stroke="#90a4ae" stroke-width="2"/>
-    <rect x="318" y="166" width="34" height="8" fill="#90caf9"/>
-    <rect x="374" y="176" width="42" height="24" rx="12" fill="#eceff1" stroke="#90a4ae" stroke-width="2"/>
-    <rect x="424" y="176" width="42" height="24" rx="12" fill="#eceff1" stroke="#90a4ae" stroke-width="2"/>
-    <line x1="335" y1="160" x2="335" y2="140" stroke="#cfd8dc" stroke-width="3"/>
-    <path d="M324,140 Q335,130 346,140" fill="none" stroke="#cfd8dc" stroke-width="3"/>
-    <!-- shield above -->
-    <path d="M280,10 L330,26 L330,66 Q330,94 280,110 Q230,94 230,66 L230,26 Z" fill="#c62828" fill-opacity="0.25" stroke="#ff8a80" stroke-width="3"/>
-    <path d="M258,62 L274,78 L304,44" fill="none" stroke="#ff8a80" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- links from shield to plant and ship -->
-    <path d="M240,80 L160,150 M320,80 L380,150" stroke="#9fd3ff" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
-    <!-- network nodes -->
-    <g fill="#9fd3ff" opacity="0.9">
-      <circle cx="40" cy="40" r="5"/><circle cx="90" cy="70" r="5"/><circle cx="140" cy="30" r="5"/><circle cx="450" cy="50" r="5"/><circle cx="510" cy="90" r="5"/><circle cx="480" cy="20" r="5"/>
+  <!-- art: protected network around a shield -->
+  <g transform="translate(1010,170) scale(0.86)">
+    <g fill="none" stroke="#94a3b8">
+      <circle r="132" stroke-opacity="0.14" stroke-dasharray="2 6"/>
+      <circle r="92" stroke-opacity="0.22"/>
+      <circle r="52" stroke-opacity="0.18"/>
     </g>
-    <g stroke="#9fd3ff" stroke-width="1.5" opacity="0.6">
-      <line x1="40" y1="40" x2="90" y2="70"/><line x1="90" y1="70" x2="140" y2="30"/><line x1="140" y1="30" x2="230" y2="50"/>
-      <line x1="450" y1="50" x2="510" y2="90"/><line x1="450" y1="50" x2="480" y2="20"/><line x1="330" y1="50" x2="450" y2="50"/>
+    <g stroke="url(#accent)" stroke-width="1.6" stroke-opacity="0.7">
+      <line x1="0" y1="0" x2="-114" y2="-66"/>
+      <line x1="0" y1="0" x2="114" y2="-66"/>
+      <line x1="0" y1="0" x2="-114" y2="66"/>
+      <line x1="0" y1="0" x2="114" y2="66"/>
+      <line x1="0" y1="0" x2="0" y2="-132"/>
+      <line x1="0" y1="0" x2="0" y2="132"/>
     </g>
+    <g stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.2" fill="none">
+      <path d="M-114,-66 L0,-132 L114,-66 L114,66 L0,132 L-114,66 Z"/>
+    </g>
+    <!-- nodes -->
+    <g font-size="12.5" font-weight="700" text-anchor="middle" letter-spacing="0.6">
+      <g transform="translate(-114,-66)"><circle r="21" fill="#0c1830" stroke="#38bdf8" stroke-width="2"/><text y="4.5" fill="#7dd3fc">PLC</text></g>
+      <g transform="translate(114,-66)"><circle r="21" fill="#0c1830" stroke="#2dd4bf" stroke-width="2"/><text y="4.5" fill="#5eead4">HMI</text></g>
+      <g transform="translate(-114,66)"><circle r="21" fill="#0c1830" stroke="#2dd4bf" stroke-width="2"/><text y="4.5" fill="#5eead4">FL</text></g>
+      <g transform="translate(114,66)"><circle r="21" fill="#0c1830" stroke="#a78bfa" stroke-width="2"/><text y="4.5" fill="#c4b5fd">LLM</text></g>
+      <g transform="translate(0,-132)"><circle r="21" fill="#0c1830" stroke="#38bdf8" stroke-width="2"/><text y="4.5" fill="#7dd3fc" font-size="10.5">SCADA</text></g>
+      <g transform="translate(0,132)"><circle r="21" fill="#0c1830" stroke="#fb7185" stroke-width="2"/><text y="4.5" fill="#fda4af" font-size="10.5">SHIP</text></g>
+    </g>
+    <!-- shield -->
+    <circle r="44" fill="#070d1a"/>
+    <path d="M0,-34 L28,-24 L28,0 Q28,22 0,34 Q-28,22 -28,0 L-28,-24 Z" fill="#38bdf8" fill-opacity="0.12" stroke="url(#shield)" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M-12,1 L-3,10 L14,-9" fill="none" stroke="#e0f2fe" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </svg>

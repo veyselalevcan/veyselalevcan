@@ -6,7 +6,8 @@
   <a href="https://pt.linkedin.com/in/veyselalevcan"><b>LinkedIn</b></a> &nbsp; / &nbsp;
   <a href="#publications"><b>Publications</b></a> &nbsp; / &nbsp;
   <a href="#open-datasets"><b>Datasets</b></a> &nbsp; / &nbsp;
-  <a href="#start-here"><b>Code</b></a>
+  <a href="#start-here"><b>Code</b></a> &nbsp; / &nbsp;
+  <a href="#copilot-agents-for-security-teams"><b>Copilot agents</b></a>
 </p>
 
 <br>
@@ -47,6 +48,27 @@ I build AI that protects industrial control systems (OT): it spots an attack, na
     </td>
   </tr>
 </table>
+
+## Copilot agents for security teams
+
+Eight defensive Microsoft 365 Copilot agents, built with Copilot Agent Builder. Instructions, skills and knowledge sources are open, so you can rebuild any of them in your own tenant.
+
+<p align="center">
+  <a href="https://github.com/veyselalevcan/copilot-agents"><img src="./assets/copilot_agents.svg" width="100%" alt="An orchestrator agent routes security requests to seven specialists: OT incident triage, Azure and Entra, AWS IAM, Google Cloud IAM, GenAI cloud security, A2A security and agent governance."></a>
+</p>
+
+| Agent | What it does |
+|-------|--------------|
+| [OT Incident Triage Advisor](https://github.com/veyselalevcan/copilot-agents/tree/main/agents/ot-incident-triage) | Safety-first triage of OT and ICS incidents: ATT&CK for ICS, severity score, IEC 62443 and NIS2 checks |
+| [Azure & Entra Security Advisor](https://github.com/veyselalevcan/copilot-agents/tree/main/agents/azure-entra-security) | Reviews Entra ID, Conditional Access and Azure RBAC; writes Sentinel KQL |
+| [AWS IAM & Security Advisor](https://github.com/veyselalevcan/copilot-agents/tree/main/agents/aws-iam-security) | Least-privilege review of IAM policies and security findings |
+| [Google Cloud IAM Advisor](https://github.com/veyselalevcan/copilot-agents/tree/main/agents/google-cloud-iam) | Reviews IAM bindings, service accounts and org policies |
+| [GenAI Cloud Security Advisor](https://github.com/veyselalevcan/copilot-agents/tree/main/agents/genai-cloud-security) | Threat models generative AI apps and agents against the OWASP LLM Top 10 |
+| [A2A Security Advisor](https://github.com/veyselalevcan/copilot-agents/tree/main/agents/a2a-security) | Threat review of agent-to-agent and MCP links, tool allow-lists |
+| [Agent Governance Advisor](https://github.com/veyselalevcan/copilot-agents/tree/main/agents/agent-governance) | Agent inventory, owners, risk tiers and review cycles |
+| [Security Agent Orchestrator](https://github.com/veyselalevcan/copilot-agents/tree/main/agents/security-agent-orchestrator) | Plans a request and writes handoff prompts for the right specialists |
+
+<p><a href="https://github.com/veyselalevcan/copilot-agents"><b>Get the agents →</b></a></p>
 
 ## Research at a glance
 
